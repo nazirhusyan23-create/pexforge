@@ -53,28 +53,6 @@ export default function HtmlToImageClient() {
           </div>
         </div>
       </div>
-
-      <article className="prose prose-sm mt-12 max-w-none text-gray-600">
-        <h2 className="text-xl font-bold text-gray-900">How HTML to image conversion works</h2>
-        <p>
-          Paste any snippet of HTML and CSS into the editor and PixForge renders it live in the preview
-          pane, then captures that rendered output as a downloadable PNG image. This is useful for
-          turning a styled card, a quote, or a small layout into a shareable graphic without needing a
-          screenshot tool or design software.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">Tips for best results</h2>
-        <p>
-          Keep your markup self-contained with inline styles or a short style block, since external
-          stylesheets and fonts loaded from other domains may not render in the exported image. Test
-          the preview first, then export once the layout looks the way you want.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
-        <p>
-          <strong>Is my HTML sent anywhere?</strong> No, rendering and exporting happen entirely in
-          your browser. <strong>What size is the output image?</strong> The exported PNG matches the
-          rendered size of your preview content.
-        </p>
-      </article>
     </div>
   );
 }

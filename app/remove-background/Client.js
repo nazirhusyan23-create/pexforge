@@ -89,29 +89,6 @@ export default function RemoveBgClient() {
           </div>
         )}
       </div>
-
-      <article className="prose prose-sm mt-12 max-w-none text-gray-600">
-        <h2 className="text-xl font-bold text-gray-900">Runs fully on your device</h2>
-        <p>
-          This tool uses an open-source segmentation model that runs with WebAssembly directly in your
-          browser tab. Your photo is never sent to any server — the only network request is the one-time
-          download of the model files themselves.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">What it's useful for</h2>
-        <p>
-          Removing the background is handy for creating a clean product photo, making a profile picture
-          with a transparent background, or cutting a subject out of a photo so it can be placed onto a
-          different backdrop. Photos with a clear subject and even lighting usually give the cleanest edges.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
-        <p>
-          <strong>Does it work on any photo?</strong> It works best on images with a clearly defined
-          subject; busy or low-contrast backgrounds can be harder for the model to separate cleanly.
-          <strong>Is the AI model accurate for hair and fine detail?</strong> It handles most edges well,
-          though very fine strands of hair may need manual touch-up in an image editor for perfect results.
-          <strong>Is it really free?</strong> Yes, with no daily limit.
-        </p>
-      </article>
     </div>
   );
 }

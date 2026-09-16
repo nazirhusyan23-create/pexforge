@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Privacy Policy",
-  description: "PixForge privacy policy — how we handle your data and images.",
+  description: "PixForge privacy policy, how we handle your data and images.",
   alternates: { canonical: "/privacy-policy" }
 };
 
@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
       <p className="text-gray-600">
         The Remove Background and Upscale Image tools download a machine-learning model file the first
         time you use them, so the tool can run locally afterwards. This download does not include your
-        image — only the model itself.
+        image, only the model itself.
       </p>
 
       <h2 className="mt-8 text-xl font-bold text-gray-900">Cookies and advertising</h2>

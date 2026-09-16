@@ -33,7 +33,7 @@ export default function Footer() {
           <div>
             <h4 className="mb-3 text-sm font-bold text-gray-900">PixForge</h4>
             <p className="text-sm text-gray-600">
-              Free, fast, browser-based image tools. Your files never leave your device — everything runs
+              Free, fast, browser-based image tools. Your files never leave your device, everything runs
               locally for full privacy.
             </p>
           </div>

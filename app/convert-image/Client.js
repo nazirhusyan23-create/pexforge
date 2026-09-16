@@ -86,28 +86,6 @@ export default function ConvertClient() {
           </div>
         )}
       </div>
-
-      <article className="prose prose-sm mt-12 max-w-none text-gray-600">
-        <h2 className="text-xl font-bold text-gray-900">How image format conversion works</h2>
-        <p>
-          PixForge decodes your original file, draws it onto an HTML canvas, and re-encodes it in the
-          format you choose — JPG, PNG or WEBP. This all happens with the browser's native canvas API,
-          so there is no upload and the conversion finishes almost instantly, even for larger photos.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">Which format should you pick?</h2>
-        <p>
-          JPG is best for photos where small file size matters more than transparency. PNG keeps a
-          transparent background and sharp edges, which suits logos and graphics. WEBP usually gives
-          the smallest file size of the three while keeping good visual quality, making it a solid
-          default for modern websites.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
-        <p>
-          <strong>Will I lose quality converting to JPG?</strong> JPG uses lossy compression, so very
-          high quality settings keep the loss minimal and barely visible. <strong>Is this tool free?</strong>
-          Yes, with no limit on how many images you convert.
-        </p>
-      </article>
     </div>
   );
 }

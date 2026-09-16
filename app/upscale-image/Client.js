@@ -33,9 +33,9 @@ export default function UpscaleClient() {
     if (!img) return;
     setBusy(true);
     try {
-      // Try the AI (ESRGAN-style) model first — runs fully on-device via TensorFlow.js
+      // Try the AI (ESRGAN-style) model first, runs fully on-device via TensorFlow.js
       // Loaded straight from the CDN (webpackIgnore) so the AI model libraries
-      // never have to be bundled by the build — this is what was breaking the
+      // never have to be bundled by the build. This is what was breaking the
       // production build earlier, so this fix is load-bearing, not cosmetic.
       await import(/* webpackIgnore: true */ "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js");
       const UpscalerModule = await import(
@@ -50,7 +50,7 @@ export default function UpscaleClient() {
       window.__pixforgeUpscaleBlob = await resp.blob();
     } catch (e) {
       // Fall back to a high-quality canvas resize (2x) if the AI model can't load
-      setMode("AI model unavailable — using high-quality resize instead.");
+      setMode("AI model unavailable, using high-quality resize instead.");
       const canvas = fallbackUpscale(img, 2);
       canvas.toBlob((blob) => {
         window.__pixforgeUpscaleBlob = blob;
@@ -110,28 +110,6 @@ export default function UpscaleClient() {
           </div>
         )}
       </div>
-
-      <article className="prose prose-sm mt-12 max-w-none text-gray-600">
-        <h2 className="text-xl font-bold text-gray-900">How AI image upscaling works</h2>
-        <p>
-          This tool runs an on-device AI model that analyzes the patterns in your existing pixels and
-          predicts the extra detail needed to enlarge the photo, rather than simply stretching it like
-          a basic resize would. The result is a larger image with noticeably sharper edges and less blur.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">When upscaling helps</h2>
-        <p>
-          Upscaling is useful for enlarging an old low-resolution photo, preparing a small graphic for
-          print, or improving an image that was compressed heavily and lost detail. Results are best on
-          photos that started reasonably sharp; extremely blurry or noisy images will still show artifacts.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
-        <p>
-          <strong>Is the AI model sent my photo?</strong> No, the model runs fully in your browser using
-          WebAssembly — only the model file itself is downloaded once, never your image.
-          <strong>How much can I enlarge an image?</strong> Typical results look best up to about 2x to
-          4x the original size.
-        </p>
-      </article>
     </div>
   );
 }

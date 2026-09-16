@@ -93,30 +93,6 @@ export default function ResizeClient() {
           </div>
         )}
       </div>
-
-      <article className="prose prose-sm mt-12 max-w-none text-gray-600">
-        <h2 className="text-xl font-bold text-gray-900">How image resizing works</h2>
-        <p>
-          PixForge loads your image into memory and redraws it onto an HTML canvas at the exact
-          width and height you choose, then re-encodes the canvas back into a JPG, PNG or WEBP file.
-          Because the resize happens with the canvas API in your own browser, there is no upload step
-          and no waiting on a server queue — you see the result the instant it is ready.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">When to resize an image</h2>
-        <p>
-          Resizing is useful before uploading a profile photo, preparing a product image for an online
-          store, or shrinking a photo so it fits a specific banner or thumbnail size without cropping
-          any content out. Locking the aspect ratio keeps your photo from looking stretched or squashed.
-        </p>
-        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
-        <p>
-          <strong>Will resizing reduce quality?</strong> Making an image smaller rarely causes visible
-          quality loss; enlarging a small image can look soft, so for big upscales try the dedicated
-          upscale tool instead. <strong>Is there a file size limit?</strong> You can resize images up to
-          several thousand pixels wide, limited only by your device's memory. <strong>Is it private?</strong>
-          Yes — the image is processed locally and never leaves your browser.
-        </p>
-      </article>
     </div>
   );
 }

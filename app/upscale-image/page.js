@@ -25,6 +25,10 @@ const faqs = [
   {
     q: "Does upscaling work on drawings and graphics, not just photos?",
     a: "It works on any raster image, including illustrations and screenshots, though results are generally most noticeable on photographic detail like textures, faces and fine lines."
+  },
+  {
+    q: "How long does the AI upscale take?",
+    a: "Processing time depends on your device and the size of the image, ranging from a couple of seconds for a small photo to noticeably longer for a large one, since the model runs on your own hardware rather than a fast remote server."
   }
 ];
 
@@ -37,7 +41,8 @@ export default function Page() {
           heading="Enlarge small images without losing sharpness"
           intro={[
             "An old photo, a small thumbnail, or an image saved at the wrong size can all end up looking pixelated once you need it bigger. PixForge's Upscale Image tool runs an on-device super-resolution model that reconstructs extra detail as it enlarges a photo, aiming for a sharper result than a plain stretch would give.",
-            "If the AI model can't load on your device for any reason, the tool automatically switches to a high-quality resize instead, so you always come away with a usable, larger image."
+            "If the AI model can't load on your device for any reason, the tool automatically switches to a high-quality resize instead, so you always come away with a usable, larger image.",
+            "Because everything runs locally, there's no per-image cost or subscription involved, which matters for a task like upscaling that people often only need occasionally rather than as part of a regular workflow."
           ]}
           steps={[
             "Upload the small or low-resolution image you want to enlarge.",

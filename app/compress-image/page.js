@@ -25,6 +25,10 @@ const faqs = [
   {
     q: "Does PixForge store or see my images?",
     a: "No. The compression happens entirely on your device using the browser's built-in Canvas API. Your photo is never sent anywhere, so there's nothing for us to store, see, or lose."
+  },
+  {
+    q: "Why does a JPG compress more than a PNG?",
+    a: "JPG was designed for photos and allows some detail to be simplified away, which is what makes big size reductions possible. PNG is lossless by design, so re-saving a PNG through this tool mainly helps when the original file has unnecessary embedded data rather than genuine photographic detail to trim."
   }
 ];
 
@@ -37,7 +41,8 @@ export default function Page() {
           heading="Why compress an image before sharing it?"
           intro={[
             "Large photos straight out of a modern phone or camera can easily weigh several megabytes, which is far more data than most websites, emails or messaging apps actually need. A compressed image loads faster, uses less mobile data, and is far more likely to fit under the upload limits of platforms like WordPress, Gmail or job application portals.",
-            "PixForge's Compress Image tool re-encodes your photo directly in the browser using the same JPEG compression algorithm found in professional photo editors, giving you a live preview of the size saved before you commit to downloading."
+            "PixForge's Compress Image tool re-encodes your photo directly in the browser using the same JPEG compression algorithm found in professional photo editors, giving you a live preview of the size saved before you commit to downloading.",
+            "There's no single quality setting that's right for every photo. A busy, detailed landscape can often tolerate more compression than a photo with smooth skin tones or a flat-colored graphic, so it's worth watching the preview and the new file size together as you move the slider rather than picking a fixed number."
           ]}
           steps={[
             "Drop or select a JPG, PNG or WEBP image.",

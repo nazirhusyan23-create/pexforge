@@ -12,8 +12,13 @@ const tools = [
   { href: "/watermark-image", label: "Watermark" },
   { href: "/remove-background", label: "Remove BG" },
   { href: "/upscale-image", label: "Upscale" },
+  { href: "/blur-image", label: "Blur" },
+  { href: "/grayscale-image", label: "Grayscale" },
+  { href: "/add-border", label: "Add Border" },
+  { href: "/color-picker", label: "Color Picker" },
   { href: "/meme-generator", label: "Meme" },
-  { href: "/html-to-image", label: "HTML to Image" }
+  { href: "/html-to-image", label: "HTML to Image" },
+  { href: "/image-to-base64", label: "Image to Base64" }
 ];
 
 export default function Navbar() {

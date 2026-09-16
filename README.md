@@ -1,8 +1,9 @@
 # PixForge: Free Online Image Tools
 
-10+ browser-based image tools (Compress, Resize, Crop, Convert, Rotate, Watermark, Meme Generator,
-HTML to Image, AI Remove Background, AI Upscale) built with **Next.js 14 (App Router)** + **Tailwind CSS**.
-Everything runs client-side, no backend, no file upload to any server, so hosting stays free forever.
+15 browser-based image tools (Compress, Resize, Crop, Convert, Rotate, Watermark, Blur, Grayscale/Sepia,
+Add Border, Color Picker, Meme Generator, HTML to Image, Image to Base64, AI Remove Background, AI
+Upscale) built with **Next.js 14 (App Router)** + **Tailwind CSS**. Everything runs client-side, no
+backend, no file upload to any server, so hosting stays free forever.
 
 ---
 
@@ -116,8 +117,13 @@ app/
   convert-image/
   rotate-image/
   watermark-image/
+  blur-image/
+  grayscale-image/
+  add-border/
+  color-picker/
   meme-generator/
   html-to-image/
+  image-to-base64/
   remove-background/   → AI, loads @imgly/background-removal from CDN at runtime
   upscale-image/       → AI, loads upscaler + tensorflow.js from CDN, with canvas fallback
   privacy-policy/, terms/

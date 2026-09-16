@@ -25,6 +25,10 @@ const faqs = [
   {
     q: "What format does the cropped image save as?",
     a: "Cropped images are downloaded as PNG so that no additional compression artifacts are introduced during the crop itself."
+  },
+  {
+    q: "Can I crop a screenshot to remove the browser bar or taskbar?",
+    a: "Yes, this is one of the most common uses for this tool. Draw the selection box to start just below the area you want removed, and adjust it until only the content you care about remains inside the box."
   }
 ];
 
@@ -37,7 +41,8 @@ export default function Page() {
           heading="Crop out exactly what matters"
           intro={[
             "Cropping is one of the fastest ways to improve a photo: removing a distracting background, tightening a composition, or cutting an image down to a square for a social media post. PixForge's cropper draws a movable, resizable selection box directly over your image so you can see exactly what will be kept before you download.",
-            "Because cropping only ever removes pixels rather than adding new ones, it never introduces blur or artifacts. The kept area is copied at its original resolution."
+            "Because cropping only ever removes pixels rather than adding new ones, it never introduces blur or artifacts. The kept area is copied at its original resolution.",
+            "A tighter crop often does more for a photo than any filter or color adjustment, since it removes whatever was distracting the eye and lets the actual subject fill more of the frame."
           ]}
           steps={[
             "Upload the image you want to crop.",

@@ -25,6 +25,10 @@ const faqs = [
   {
     q: "Can I convert multiple images at once?",
     a: "This tool currently handles one image at a time so you can preview the result before downloading. For batch conversion of many files, run them through one after another. Each conversion only takes a couple of seconds."
+  },
+  {
+    q: "Is WEBP safe to use on every website?",
+    a: "WEBP is supported by all major modern browsers, but if your website or platform is older or you need guaranteed universal compatibility, JPG remains the safest default for photos and PNG the safest default for graphics that need transparency."
   }
 ];
 
@@ -37,7 +41,8 @@ export default function Page() {
           heading="Switch between JPG, PNG and WEBP instantly"
           intro={[
             "Not every image format works everywhere, some platforms only accept JPG uploads, some designs need PNG transparency, and modern websites increasingly prefer WEBP for its smaller file size. PixForge's Convert Image tool re-encodes your picture into whichever format you choose without ever leaving your browser tab.",
-            "Because the conversion is done locally using the browser's Canvas API, there's no queue, no server round-trip, and your original file is never uploaded anywhere."
+            "Because the conversion is done locally using the browser's Canvas API, there's no queue, no server round-trip, and your original file is never uploaded anywhere.",
+            "If you're not sure which format to pick, think about what the image is: photos usually convert best to JPG or WEBP, while graphics, logos and anything needing a transparent background belong in PNG or WEBP instead."
           ]}
           steps={[
             "Upload the image you'd like to convert.",

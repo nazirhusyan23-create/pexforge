@@ -25,6 +25,10 @@ const faqs = [
   {
     q: "Will rotating crop or cut off parts of my image?",
     a: "Rotating by 90, 180 or 270 degrees keeps the entire image intact, just with the canvas dimensions swapped. Rotating by an in-between angle expands the canvas so nothing is cut off, which may leave transparent corners in the downloaded PNG."
+  },
+  {
+    q: "My photo has the correct orientation on my phone but wrong everywhere else. Why?",
+    a: "Phones typically store the photo the same way regardless of how it was held, and instead save a small rotation instruction as metadata. Most apps read that instruction and display it correctly, but not every website or tool does, which is exactly what this tool fixes by rotating the actual pixels."
   }
 ];
 
@@ -37,7 +41,8 @@ export default function Page() {
           heading="Fix sideways or upside-down photos in seconds"
           intro={[
             "A photo taken with a phone held the wrong way, or scanned into a document at an angle, is one of the most common small annoyances in everyday image editing. PixForge's Rotate Image tool gives you one-click 90-degree rotation buttons for the common case, plus a fine-angle slider and horizontal/vertical flipping for anything more specific.",
-            "The rotated result is rendered on an HTML canvas at full resolution, so there's no quality loss beyond the normal re-encoding involved in saving any image file."
+            "The rotated result is rendered on an HTML canvas at full resolution, so there's no quality loss beyond the normal re-encoding involved in saving any image file.",
+            "Straightening a photo taken at a slight angle usually only needs a small adjustment, often just a degree or two, so it's worth zooming in on a straight edge like a horizon or a wall while nudging the fine-angle slider."
           ]}
           steps={[
             "Upload the image that needs rotating or flipping.",

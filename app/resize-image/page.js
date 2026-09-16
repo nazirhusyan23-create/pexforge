@@ -25,6 +25,10 @@ const faqs = [
   {
     q: "What file format does the resized image download as?",
     a: "Resized images are saved as PNG by default to avoid any extra quality loss. If you need a smaller JPG file afterward, run the result through our Compress Image or Convert Image tool."
+  },
+  {
+    q: "Should I resize before or after cropping a photo?",
+    a: "Cropping first usually gives a cleaner result, since you're deciding exactly what part of the photo to keep before deciding what size it should end up at. Resizing a photo and then cropping it can waste detail if the crop area ends up smaller than expected."
   }
 ];
 
@@ -37,7 +41,8 @@ export default function Page() {
           heading="Resize images without losing proportions"
           intro={[
             "Every screen, platform and print job expects a different pixel size, and sending an oversized image to a place that only needs a small thumbnail wastes bandwidth and slows pages down. PixForge's Resize Image tool lets you type in an exact width and height, or keep the original proportions locked while you adjust just one dimension.",
-            "Because the resize happens on an HTML canvas inside your own browser, the result is available instantly, there's no upload progress bar to wait for, and no size limit imposed by a server."
+            "Because the resize happens on an HTML canvas inside your own browser, the result is available instantly, there's no upload progress bar to wait for, and no size limit imposed by a server.",
+            "Keeping the aspect ratio locked matters more than it might seem: even a small mismatch between width and height can make faces and objects look subtly stretched, which is often more noticeable to a viewer than the resize itself."
           ]}
           steps={[
             "Upload the image you want to resize.",

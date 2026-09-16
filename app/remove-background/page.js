@@ -25,6 +25,10 @@ const faqs = [
   {
     q: "Is my photo uploaded to a server?",
     a: "No. Only the model files are downloaded, once, from a content delivery network. Your actual photo is processed entirely on your device and never leaves your browser."
+  },
+  {
+    q: "Can I put the cut-out subject onto a new background afterward?",
+    a: "Yes, since the result downloads as a transparent PNG, you can layer it over any new background in an image editor, a slideshow tool, or even another PixForge tool such as Add Border."
   }
 ];
 
@@ -37,7 +41,8 @@ export default function Page() {
           heading="Cut out any subject in one click"
           intro={[
             "Removing a background by hand with a lasso tool or pen tool can take several minutes even for a skilled editor. PixForge's Remove Background tool uses an on-device AI segmentation model to detect the main subject in a photo and erase everything else automatically, in seconds, without you needing to trace a single edge.",
-            "Because the model runs with WebAssembly directly in your browser tab, there's no account, no per-image credit limit and no watermark added to the result."
+            "Because the model runs with WebAssembly directly in your browser tab, there's no account, no per-image credit limit and no watermark added to the result.",
+            "Photos where the subject is clearly separated from the background, good lighting, a plain or blurred backdrop, sharp focus, tend to give the cleanest cutouts, while very cluttered or low-contrast scenes can leave a few rough edges."
           ]}
           steps={[
             "Upload a photo with a clear subject, such as a person, product or animal.",

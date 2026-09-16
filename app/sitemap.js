@@ -10,6 +10,11 @@ const routes = [
   "/html-to-image",
   "/remove-background",
   "/upscale-image",
+  "/blur-image",
+  "/grayscale-image",
+  "/add-border",
+  "/color-picker",
+  "/image-to-base64",
   "/privacy-policy",
   "/terms"
 ];

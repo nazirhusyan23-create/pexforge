@@ -24,6 +24,10 @@ const faqs = [
   {
     q: "Can I leave the top or bottom text blank?",
     a: "Yes. Clear either text field and that caption simply won't be drawn, so you can create a bottom-caption-only or top-caption-only meme if that fits your joke better."
+  },
+  {
+    q: "Why is the font specifically bold with a black outline?",
+    a: "That combination, usually a heavy sans-serif font like Impact with a thick black stroke around white text, is the classic meme style that's stayed readable over even busy or brightly colored background photos since the format first became popular online."
   }
 ];
 
@@ -36,7 +40,8 @@ export default function Page() {
           heading="Make a classic meme in seconds"
           intro={[
             "The top-text, bottom-text meme format has been a staple of internet culture for years, and PixForge's Meme Generator recreates the classic bold, white, black-outlined caption style on top of any image you upload. Everything updates live as you type, so what you see is exactly what gets downloaded.",
-            "Because the whole process runs in your browser, there's no waiting for a server to render your meme and no watermark added to the result."
+            "Because the whole process runs in your browser, there's no waiting for a server to render your meme and no watermark added to the result.",
+            "Short, punchy captions tend to work better than long ones, both because the classic meme font reads best in a couple of words and because the format's whole appeal leans on quick, immediate humor."
           ]}
           steps={[
             "Upload the base image for your meme.",

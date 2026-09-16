@@ -25,6 +25,10 @@ const faqs = [
   {
     q: "Where's the best place to position a watermark?",
     a: "Bottom-right is the most common choice since it rarely covers the main subject of a photo, but a centered, semi-transparent watermark is harder to crop out if protecting the image from theft is your main goal."
+  },
+  {
+    q: "Will the watermark still be visible if someone resizes my photo?",
+    a: "Yes, since the watermark is part of the image pixels themselves rather than a separate overlay, it scales along with the rest of the photo no matter how the file is later resized or compressed."
   }
 ];
 
@@ -37,7 +41,8 @@ export default function Page() {
           heading="Protect your photos with a custom watermark"
           intro={[
             "Whether you're a photographer sharing a portfolio preview, a small business protecting product photography, or just labeling a screenshot with your website, a watermark is a simple way to mark an image as yours before it's shared. PixForge lets you type any text, then adjust its size, color, position and transparency with an instant live preview.",
-            "The watermark is drawn directly onto the image pixels using the Canvas API, so it becomes a permanent part of the downloaded file rather than an overlay that can be easily removed."
+            "The watermark is drawn directly onto the image pixels using the Canvas API, so it becomes a permanent part of the downloaded file rather than an overlay that can be easily removed.",
+            "A lighter, more transparent watermark tends to look more professional and less like it's fighting the photo for attention, while a bolder, higher-contrast mark is better suited to actively discouraging image theft."
           ]}
           steps={[
             "Upload the photo you want to watermark.",

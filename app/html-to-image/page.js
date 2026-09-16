@@ -24,6 +24,10 @@ const faqs = [
   {
     q: "What is this useful for?",
     a: "It's a quick way to turn a styled quote, a simple info card, a code snippet block or any other small HTML layout into a shareable image for social media, a blog post, or a presentation slide."
+  },
+  {
+    q: "Can I use web fonts or custom fonts in my HTML?",
+    a: "Fonts that are already loaded on the page, including the system default fonts, will render correctly. A web font linked from an external stylesheet may not always be picked up in time for the snapshot, so for guaranteed results it's safest to stick with common system fonts."
   }
 ];
 
@@ -36,7 +40,8 @@ export default function Page() {
           heading="Turn styled HTML into a shareable PNG"
           intro={[
             "Sometimes the easiest way to design a small graphic, a styled quote card, an announcement banner, a code snippet screenshot, is with plain HTML and CSS rather than a full design tool. PixForge's HTML to Image converter renders your markup live in the browser and lets you export the result as a crisp PNG at double resolution for sharp text.",
-            "This is especially handy for developers who are more comfortable writing a few lines of styled HTML than dragging shapes around a canvas editor."
+            "This is especially handy for developers who are more comfortable writing a few lines of styled HTML than dragging shapes around a canvas editor.",
+            "The default example in the editor shows a simple gradient card with a heading and a line of text, which is a good starting point to edit directly rather than writing a snippet from scratch."
           ]}
           steps={[
             "Paste or edit your HTML (with inline styles) in the source box.",

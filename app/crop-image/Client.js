@@ -2,7 +2,6 @@
 
 import { useRef, useState } from "react";
 import Uploader from "../../components/Uploader";
-import AdSlot from "../../components/AdSlot";
 import { downloadBlob, loadImage } from "../../lib/downloadFile";
 
 const HANDLE_SIZE = 14;
@@ -112,9 +111,27 @@ export default function CropClient() {
         )}
       </div>
 
-      <div className="mt-10">
-        <AdSlot slot="4444444444" />
-      </div>
+      <article className="prose prose-sm mt-12 max-w-none text-gray-600">
+        <h2 className="text-xl font-bold text-gray-900">How to crop an image online</h2>
+        <p>
+          Drag the corner handles to draw a selection box over the part of the photo you want to keep,
+          move the box to reposition it, then click crop. PixForge reads the pixels inside your
+          selection straight off the canvas and exports just that region as a new image file.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">Common uses for cropping</h2>
+        <p>
+          Cropping is handy for removing distracting background from a portrait, turning a landscape
+          photo into a square for social media, or isolating one object out of a larger picture before
+          using it elsewhere. Because the tool runs in your browser, you can try several crops quickly
+          without re-uploading the file each time.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
+        <p>
+          <strong>Can I crop to a specific aspect ratio?</strong> Yes, drag the handles freely or resize
+          the box to match the shape you need, such as a square or widescreen crop. <strong>Is my photo
+          uploaded to a server?</strong> No, cropping happens entirely on your device.
+        </p>
+      </article>
     </div>
   );
 }

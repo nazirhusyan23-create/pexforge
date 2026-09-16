@@ -1,5 +1,4 @@
 import ToolCard from "../components/ToolCard";
-import AdSlot from "../components/AdSlot";
 
 const tools = [
   { href: "/compress-image", icon: "🗜️", title: "Compress Image", description: "Shrink JPG, PNG and WEBP file size while keeping great quality." },
@@ -36,10 +35,6 @@ export default function HomePage() {
         ))}
       </section>
 
-      <section className="mt-16">
-        <AdSlot slot="1111111111" />
-      </section>
-
       <section className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">
         <div>
           <h2 className="text-lg font-bold text-gray-900">Private by design</h2>
@@ -62,6 +57,27 @@ export default function HomePage() {
             developers alike.
           </p>
         </div>
+      </section>
+
+      <section className="mt-16 max-w-3xl">
+        <h2 className="text-2xl font-bold text-gray-900">Why use PixForge</h2>
+        <p className="mt-3 text-gray-600">
+          Most online image tools ask you to upload your photo to a remote server before doing
+          anything with it, which means waiting on a queue and trusting a stranger's server with your
+          files. PixForge takes a different approach: every tool on this site — from compressing and
+          resizing to AI background removal — runs directly inside your own browser using JavaScript,
+          Canvas and WebAssembly. Your image is decoded, edited and re-encoded on your device, and the
+          result is ready to download in seconds, with nothing ever sent anywhere else.
+        </p>
+        <h2 className="mt-8 text-2xl font-bold text-gray-900">Frequently asked questions</h2>
+        <p className="mt-3 text-gray-600">
+          <strong>Do I need to create an account?</strong> No, every tool works instantly with no
+          signup. <strong>Is there a limit on how many images I can process?</strong> No, use any tool
+          as many times as you like. <strong>Will my images be stored or shared?</strong> No — since
+          processing happens locally on your device, PixForge never sees or stores your files.
+          <strong>Which browsers are supported?</strong> Any modern browser on desktop or mobile,
+          including Chrome, Safari, Firefox and Edge.
+        </p>
       </section>
     </div>
   );

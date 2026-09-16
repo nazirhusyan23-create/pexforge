@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Uploader from "../../components/Uploader";
-import AdSlot from "../../components/AdSlot";
 import { downloadBlob, loadImage } from "../../lib/downloadFile";
 
 export default function UpscaleClient() {
@@ -112,9 +111,27 @@ export default function UpscaleClient() {
         )}
       </div>
 
-      <div className="mt-10">
-        <AdSlot slot="1313131313" />
-      </div>
+      <article className="prose prose-sm mt-12 max-w-none text-gray-600">
+        <h2 className="text-xl font-bold text-gray-900">How AI image upscaling works</h2>
+        <p>
+          This tool runs an on-device AI model that analyzes the patterns in your existing pixels and
+          predicts the extra detail needed to enlarge the photo, rather than simply stretching it like
+          a basic resize would. The result is a larger image with noticeably sharper edges and less blur.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">When upscaling helps</h2>
+        <p>
+          Upscaling is useful for enlarging an old low-resolution photo, preparing a small graphic for
+          print, or improving an image that was compressed heavily and lost detail. Results are best on
+          photos that started reasonably sharp; extremely blurry or noisy images will still show artifacts.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
+        <p>
+          <strong>Is the AI model sent my photo?</strong> No, the model runs fully in your browser using
+          WebAssembly — only the model file itself is downloaded once, never your image.
+          <strong>How much can I enlarge an image?</strong> Typical results look best up to about 2x to
+          4x the original size.
+        </p>
+      </article>
     </div>
   );
 }

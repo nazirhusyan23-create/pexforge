@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Uploader from "../../components/Uploader";
-import AdSlot from "../../components/AdSlot";
 import { downloadBlob, loadImage, formatBytes } from "../../lib/downloadFile";
 
 export default function CompressClient() {
@@ -100,16 +99,26 @@ export default function CompressClient() {
         )}
       </div>
 
-      <div className="mt-10">
-        <AdSlot slot="2222222222" />
-      </div>
-
       <article className="prose prose-sm mt-12 max-w-none text-gray-600">
         <h2 className="text-xl font-bold text-gray-900">How image compression works</h2>
         <p>
           PixForge redraws your image onto an HTML canvas and re-encodes it using adjustable JPEG quality,
           which reduces file size by simplifying fine detail in ways that are barely visible to the eye.
           Lower the quality slider for smaller files, or keep it high to preserve maximum detail.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">Why compress an image</h2>
+        <p>
+          Smaller image files load faster on websites, take up less storage, and are easier to email or
+          attach to a message that has a size limit. Compressing before you upload can also improve a
+          site's page-speed score, which matters for both visitors and search engine rankings.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
+        <p>
+          <strong>How much smaller will my file get?</strong> It depends on the original image and the
+          quality level you pick — most photos shrink noticeably at 70–80% quality with little visible
+          difference. <strong>Is there a limit on file size?</strong> No, but very large images take a
+          little longer to process since everything runs on your own device.
+          <strong>Do I need to install anything?</strong> No, the tool works directly in your browser.
         </p>
       </article>
     </div>

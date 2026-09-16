@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Uploader from "../../components/Uploader";
-import AdSlot from "../../components/AdSlot";
 import { downloadBlob, loadImage } from "../../lib/downloadFile";
 
 const POSITIONS = {
@@ -123,9 +122,26 @@ export default function WatermarkClient() {
         )}
       </div>
 
-      <div className="mt-10">
-        <AdSlot slot="7777777777" />
-      </div>
+      <article className="prose prose-sm mt-12 max-w-none text-gray-600">
+        <h2 className="text-xl font-bold text-gray-900">How to add a watermark to a photo</h2>
+        <p>
+          Type the text you want stamped onto your image, choose its position, size, color and opacity,
+          and PixForge draws it directly onto a copy of your photo using the canvas API. Because
+          everything renders locally, you can adjust the watermark and preview it live before saving.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">Why watermark your images</h2>
+        <p>
+          A visible watermark helps protect photos you share online — on a portfolio, social media, or
+          a marketplace listing — by making it clear who owns the work and discouraging unauthorized
+          reuse. A low-opacity watermark in a corner is usually enough without distracting from the photo.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
+        <p>
+          <strong>Can I control how visible the watermark is?</strong> Yes, the opacity slider lets you
+          make it subtle or bold. <strong>Does the tool store my images?</strong> No, nothing is uploaded
+          or saved anywhere outside your own device.
+        </p>
+      </article>
     </div>
   );
 }

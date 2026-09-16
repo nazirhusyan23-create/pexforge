@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Uploader from "../../components/Uploader";
-import AdSlot from "../../components/AdSlot";
 import { downloadBlob, loadImage } from "../../lib/downloadFile";
 
 function wrapText(ctx, text, maxWidth) {
@@ -97,9 +96,28 @@ export default function MemeClient() {
         )}
       </div>
 
-      <div className="mt-10">
-        <AdSlot slot="8888888888" />
-      </div>
+      <article className="prose prose-sm mt-12 max-w-none text-gray-600">
+        <h2 className="text-xl font-bold text-gray-900">How to make a meme online</h2>
+        <p>
+          Upload any picture, type your top and bottom captions, and PixForge draws them onto the image
+          using the classic bold white-with-black-outline meme font. Everything is rendered on an HTML
+          canvas in your browser, so you can preview the result instantly and tweak the wording before
+          you download the final PNG.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">Tips for a better meme</h2>
+        <p>
+          Keep captions short — memes read fastest with five to eight words per line. Use a high-contrast
+          photo so the white text stays legible, and try both a serious and a sarcastic caption before you
+          settle on one; the best memes usually come from the second or third attempt, not the first.
+        </p>
+        <h2 className="text-xl font-bold text-gray-900">Frequently asked questions</h2>
+        <p>
+          <strong>Is it free?</strong> Yes, meme generation is completely free with no watermark added to
+          your download. <strong>Does my image get uploaded anywhere?</strong> No — the caption is drawn
+          locally in your browser, so the picture never leaves your device. <strong>Can I use it on
+          mobile?</strong> Yes, the tool works on phone and tablet browsers as well as desktop.
+        </p>
+      </article>
     </div>
   );
 }

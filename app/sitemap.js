@@ -15,7 +15,7 @@ const routes = [
 ];
 
 export default function sitemap() {
-  const base = "https://pixforge.vercel.app";
+  const base = "https://pexforge.vercel.app";
   return routes.map((route) => ({
     url: `${base}${route}`,
     lastModified: new Date(),

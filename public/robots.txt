@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pixforge.vercel.app/sitemap.xml
+Sitemap: https://pexforge.vercel.app/sitemap.xml

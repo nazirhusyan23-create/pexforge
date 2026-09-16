@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  metadataBase: new URL("https://pixforge.vercel.app"),
+  metadataBase: new URL("https://pexforge.vercel.app"),
   title: {
     default: "PixForge — Free Online Image Tools (Compress, Resize, Crop, Convert)",
     template: "%s | PixForge"
@@ -25,7 +25,7 @@ export const metadata = {
     title: "PixForge — Free Online Image Tools",
     description:
       "Compress, resize, crop, convert, watermark, remove background and upscale images for free, right in your browser.",
-    url: "https://pixforge.vercel.app",
+    url: "https://pexforge.vercel.app",
     siteName: "PixForge",
     type: "website"
   },
